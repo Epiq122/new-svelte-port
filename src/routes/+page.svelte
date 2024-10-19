@@ -1,6 +1,5 @@
 <script>
-	import { HeroSection } from '$components';
-	import AboutMeSection from '$components/sections/AboutMeSection.svelte';
+	import { HeroSection, AboutMeSection } from '$components';
 </script>
 
 <HeroSection />

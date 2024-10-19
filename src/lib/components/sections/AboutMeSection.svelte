@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SectionHeadline, Button } from '$components';
+	import { SectionHeadline, Button, ExperienceTable } from '$components';
 	import image from '$assets/profile.png';
 	import { goto } from '$app/navigation';
 
@@ -12,6 +12,7 @@
 	<SectionHeadline sectionName={'about-me'}>About Me</SectionHeadline>
 	<div class="mt-m content-container default-margin">
 		<img src={image} alt="rob" class="image" />
+
 		<div class="text">
 			<p>
 				Hey, I'm Rob, a developer living in Vancouver Bc, specializing in making modern web
@@ -29,6 +30,7 @@
 			<Button className="mt-m" {onclick}>Tell me about your project</Button>
 		</div>
 	</div>
+	<ExperienceTable />
 </section>
 
 <style>
