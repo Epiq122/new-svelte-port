@@ -11,7 +11,7 @@
 	<h3>Hello! I'm Rob</h3>
 	<div class="underscore"></div>
 	<h1>I'm a Fullstack developer creating modern</h1>
-	<h1 class="dark-grey">web solutions</h1>
+	<h1 class="dark-grey mb-m">web solutions</h1>
 	<Button {onclick}>Let's Talk!</Button>
 </section>
 
