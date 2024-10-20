@@ -3,8 +3,8 @@
 
 	// the `data` object comes from your page's `load` function
 	const { data } = $props();
-	$inspect(data);
+	let { devExperience } = data;
 </script>
 
 <HeroSection />
-<AboutMeSection />
+<AboutMeSection {devExperience} />
