@@ -2,10 +2,9 @@
 	import { SectionHeadline, Button, ExperienceTable } from '$components';
 	import image from '$assets/profile.png';
 	import { goto } from '$app/navigation';
-	import type { DevExperience } from '$lib/types/sanity';
 
 	interface AboutMeProps {
-		devExperience: DevExperience[];
+		devExperience: SanityDevExperience[];
 	}
 
 	let { devExperience }: AboutMeProps = $props();

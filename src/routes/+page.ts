@@ -1,11 +1,14 @@
-import type { DevExperience } from '$lib/types/sanity';
 import SanityClient from '$lib/utils/sanity';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async () => {
-	const devExperience: DevExperience[] = await SanityClient.fetch(
+	const devExperience: SanityDevExperience[] = await SanityClient.fetch(
 		`*[_type == "devExperience"] | order(startDate desc)`
 	);
 
-	return { devExperience };
+	const rawProjects: SanityProject[] = await SanityClient.fetch(`*[_type == "project"]`);
+
+	// const projects = rawProjects.map(processProjectEntries);
+
+	return { devExperience, rawProjects };
 };

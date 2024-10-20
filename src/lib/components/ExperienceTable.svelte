@@ -1,8 +1,6 @@
 <script lang="ts">
-	import type { DevExperience } from '$lib/types/sanity';
-
 	interface ExperienceTableProps {
-		devExperience: DevExperience[];
+		devExperience: SanityDevExperience[];
 	}
 
 	let { devExperience }: ExperienceTableProps = $props();
